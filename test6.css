@@ -55,6 +55,7 @@ a{
     display: block;
     text-align: center;
 }
+
 .screen-phone ul li a:hover{
     background-color: rgba(0,0,0,0.6);
 }
