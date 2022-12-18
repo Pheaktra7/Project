@@ -8,29 +8,59 @@
     <title>Document</title>
 </head>
 <style>
+    .item-box{
+        padding: 2px;
+    }
     .box{
         border-radius: 4px;
+        background-color: #eee;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .box figure{
+        overflow: hidden;
+    }
+    .box figure img{
+        transition: 0.5s;
+    }
+    .box figure:hover img{
+        transform: scale(1.09);
+    }
+    .box:hover .color-text{
+        color: rgb(126, 81, 81);
     }
 </style>
 <body>
-    <div class="container mt-4">
+    <div class="container mt-4 content">
         <div class="row">
-            <div class="col-4 bg-info box">
-                <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
-                <div class="caption p-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 item-box">
+                <div class="box">
+                    <figure>
+                        <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
+                    </figure>
+                    <div class="caption p-1 color-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+                    </div>
                 </div>
             </div>
-            <div class="col-4 bg-info box">
-                <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
-                <div class="caption p-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 item-box">
+                <div class="box">
+                    <figure>
+                        <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
+                    </figure>
+                    <div class="caption p-1 color-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+                    </div>
                 </div>
             </div>
-            <div class="col-4 bg-info box">
-                <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
-                <div class="caption p-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 item-box">
+                <div class="box">
+                    <figure>
+                        <img src="asset/1.jpg" alt="" class="img-fluid w-100 card my-1">
+                    </figure>
+                    <div class="caption p-1 color-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptatem ducimus odio dolor perferendis similique necessitatibus sequi, ratione eligendi consectetur?
+                    </div>
                 </div>
             </div>
         </div>
