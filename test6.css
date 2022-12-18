@@ -1,0 +1,106 @@
+.menubar{
+    background-color: red;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    display: block;
+}
+
+.menu-phone {
+    display: none;
+}
+
+.menu ul li a:hover {
+    color: #333;
+}
+
+.menu-phone i{
+    padding: 15px 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.screen-phone{
+    width: 100%;
+    position: absolute;
+    left: -200%;
+    transition: 0.7s;
+}
+
+.screen-phone ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-phone ul li a{
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+.screen-phone ul li a:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* mobile phone */
+@media (max-width: 575.98px) { 
+    .menu{
+        display: none;
+    }
+
+    .menu-phone {
+        display: block;
+    }
+
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .menu{
+        display: none;
+    }
+
+    .menu-phone {
+        display: block;
+    }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .menu{
+        display: none;
+    }
+
+    .menu-phone {
+        display: block;
+    }
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .menu ul li a{
+        font-size: 14px;
+    }
+}
+
+/* Laptop*/
+@media (min-width: 1200px) { 
+
+}

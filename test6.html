@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="test6.css">
+    <title>Responsive menubar</title>
+</head>
+<body>
+    <div class="container-fluid menubar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Abouts</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-phone">
+                        <label for="menu"><i class="fa-solid fa-bars popup"></i></label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="screen-phone">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Abouts</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var click = document.querySelector('.popup');
+    var menuPhone = document.querySelector('.screen-phone'); 
+    var i = true
+    click.addEventListener('click',function(){
+        if(i){
+            menuPhone.style.left='0';
+        }
+        else {
+            menuPhone.style.left='-200%';
+        }
+        i = !i;
+    }); 
+</script>
+</html>
