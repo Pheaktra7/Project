@@ -38,7 +38,9 @@ a{
 
 .screen-phone{
     width: 100%;
+    height: calc(100vh - 48px);
     position: absolute;
+    background-color: #333;
     left: -200%;
     transition: 0.7s;
 }
@@ -50,7 +52,6 @@ a{
 
 .screen-phone ul li a{
     color: white;
-    background-color: #333;
     padding: 10px;
     display: block;
     text-align: center;
